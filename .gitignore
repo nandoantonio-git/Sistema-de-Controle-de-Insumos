@@ -4,5 +4,4 @@ venv/
 __pycache__/
 .idea/
 *.iml
-.PyCharmMiscProject.iml
 *.log
