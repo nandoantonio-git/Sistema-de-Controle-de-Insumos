@@ -65,7 +65,16 @@ Escolha uma opção: 1
 ✅ Sequencial — Encontrado em 3 passo(s). Índice: 2. Item: ('Reagente B', 7, '2026-05-10')
 
 ```
-
+## Dados simulados
+```python
+    insumos_simulados = [
+        ("Reagente A", 5,  "validade: 2026-02-01"),
+        ("Seringa",    10, "validade: 2027-12-31"),
+        ("Reagente B", 7,  "validade: 2026-05-10"),
+        ("Luvas",      20, "validade: 2025-11-20"),
+        ("Álcool 70",  12, "validade: 2026-08-15"),
+    ]
+```
 
 ## Estrutura/Algoritmo
 
@@ -99,3 +108,4 @@ O projeto demonstra a aplicação prática de estruturas de dados e algoritmos e
 - Buscas oferecem formas diferentes de localizar insumos, com feedback de eficiência.
 - Ordenações ajudam a priorizar decisões de compra e reposição.
 - O menu interativo torna o sistema acessível e próximo de um software real de apoio à gestão.
+
