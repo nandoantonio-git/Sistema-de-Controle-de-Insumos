@@ -168,11 +168,11 @@ def menu_ordenacao(controle: ControleInsumos):
 def menu_principal():
     # Dados simulados
     insumos_simulados = [
-        ("Reagente A", 5,  "validade: 2026-02-01"),
-        ("Seringa",    10, "validade: 2027-12-31"),
-        ("Reagente B", 7,  "validade: 2026-05-10"),
-        ("Luvas",      20, "validade: 2025-11-20"),
-        ("Álcool 70",  12, "validade: 2026-08-15"),
+        ("Reagente A", 5,  "Validade: 2026-02-01"),
+        ("Seringa",    10, "Validade: 2027-12-31"),
+        ("Reagente B", 7,  "Validade: 2026-05-10"),
+        ("Luvas",      20, "Validade: 2025-11-20"),
+        ("Álcool 70",  12, "Validade: 2026-08-15"),
     ]
     controle = ControleInsumos()
     for it in insumos_simulados:
