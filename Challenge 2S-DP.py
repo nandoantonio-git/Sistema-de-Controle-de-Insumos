@@ -2,7 +2,6 @@ from collections import deque, defaultdict
 import unicodedata
 from datetime import date
 
-# ===================== Utils =====================
 def normaliza(s: str) -> str:
     """Remove acentos/variações e baixa caixa para comparação robusta."""
     nfkd = unicodedata.normalize("NFKD", s)
@@ -49,7 +48,6 @@ def ordenar_por_validade(insumos):
     """Ordena insumos pela data de validade (menor para maior)."""
     return sorted(insumos, key=lambda t: (parse_validade_str(str(t[2])) or date.max))
 
-# ===================== Modelo de Dados =====================
 class ControleInsumos:
     """Mantém fila (cronológica) e pilha (recente primeiro) dos consumos."""
     def __init__(self):
@@ -66,7 +64,6 @@ class ControleInsumos:
     def mostrar_pilha(self):
         return list(reversed(self.pilha_consumo))
 
-# ===================== Buscas =====================
 def busca_sequencial_exata(insumos, alvo_nome):
     alvo = normaliza(alvo_nome)
     passos = 0
@@ -97,7 +94,6 @@ def busca_binaria_exata(indice_ordenado, alvo_nome):
             direita = meio - 1
     return (None, passos, -1)
 
-# ===================== Ordenações (exemplos) =====================
 def merge_sort(v):
     if len(v) <= 1:
         return v
@@ -125,7 +121,6 @@ def quick_sort(v):
     maiores = [x for x in v[1:] if x > p]
     return quick_sort(menores) + [p] + quick_sort(maiores)
 
-# ===================== Entradas Robustas =====================
 def solicitar_nome_valido(nomes_validos):
     """Validador robusto que trata colisões de normalização e sugere alternativas."""
     mapa_norm = defaultdict(list)
@@ -172,7 +167,6 @@ def solicitar_opcao(msg, opcoes_validas):
             return escolha
         print("❌ Opção inválida. Tente novamente.")
 
-# ===================== Menus =====================
 def menu_busca(controle: ControleInsumos):
     while True:
         print("\n===== MENU DE BUSCA =====")
