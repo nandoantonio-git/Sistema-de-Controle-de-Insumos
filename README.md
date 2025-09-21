@@ -61,18 +61,16 @@ python main.py
 3) Buscar insumo
 4) Ordenações
 0) Sair
-Escolha uma opção: 3
-
-===== MENU DE BUSCA =====
-1) Busca Sequencial (exata)
-2) Busca Binária (exata)
-0) Voltar ao menu principal
 Escolha uma opção: 1
 
-🔎 Digite o NOME do insumo (opções: Reagente A, Seringa, Reagente B, Luvas, Álcool 70): Reagente B
-
-✅ Sequencial — Encontrado em 3 passo(s). Índice: 2. Item: ('Reagente B', 7, '2026-05-10')
-
+Fila (ordem cronológica):
+Insumo       Qtd  Validade
+--------------------------
+Reagente A     5  2026-02-01
+Seringa       10  2027-12-31
+Reagente B     7  2026-05-10
+Luvas         20  2025-11-20
+Álcool 70     12  2026-08-15
 ```
 ## Estrutura/Algoritmo
 
@@ -91,6 +89,7 @@ Escolha uma opção: 1
     - **Retorna:** insumo encontrado, número de passos e posição na lista ordenada. Muito mais eficiente para grandes volumes de dados.
 - **Ordenação**
     - **Merge Sort** e **Quick Sort** implementados para ordenar os insumos por quantidade.
+    -  - **Ordenação por validade** implementada para organizar os insumos pela data de vencimento, priorizando os que expiram primeiro.
     - Permite análises como:
         - Quais insumos são mais consumidos.
          - Priorização de reposição.
@@ -106,6 +105,7 @@ O projeto demonstra a aplicação prática de estruturas de dados e algoritmos e
 - Buscas oferecem formas diferentes de localizar insumos, com feedback de eficiência.
 - Ordenações ajudam a priorizar decisões de compra e reposição.
 - O menu interativo torna o sistema acessível e próximo de um software real de apoio à gestão.
+
 
 
 
