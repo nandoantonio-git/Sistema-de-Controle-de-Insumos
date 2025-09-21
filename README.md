@@ -43,11 +43,11 @@ python main.py
 ## Dados simulados
 ```python
     insumos_simulados = [
-        ("Reagente A", 5,  "validade: 2026-02-01"),
-        ("Seringa",    10, "validade: 2027-12-31"),
-        ("Reagente B", 7,  "validade: 2026-05-10"),
-        ("Luvas",      20, "validade: 2025-11-20"),
-        ("Álcool 70",  12, "validade: 2026-08-15"),
+        ("Reagente A", 5,  "Validade: 2026-02-01"),
+        ("Seringa",    10, "Validade: 2027-12-31"),
+        ("Reagente B", 7,  "Validade: 2026-05-10"),
+        ("Luvas",      20, "Validade: 2025-11-20"),
+        ("Álcool 70",  12, "Validade: 2026-08-15"),
     ]
 ```
 
@@ -106,5 +106,6 @@ O projeto demonstra a aplicação prática de estruturas de dados e algoritmos e
 - Buscas oferecem formas diferentes de localizar insumos, com feedback de eficiência.
 - Ordenações ajudam a priorizar decisões de compra e reposição.
 - O menu interativo torna o sistema acessível e próximo de um software real de apoio à gestão.
+
 
 
