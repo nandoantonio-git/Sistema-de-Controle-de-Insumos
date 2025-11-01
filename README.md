@@ -4,6 +4,14 @@
 Sistema em Python para simular o controle de consumo diário de insumos em unidades de diagnóstico.
 O projeto aplica conceitos de estruturas de dados (fila, pilha, busca e ordenação) em um menu interativo no terminal.
 
+## Integrantes
+    Abner de Paiva Barbosa - RM558468, 
+    Eduardo Dallabella - RM556803, 
+    Fernando Luiz - RM555201, 
+    Heloísa Real - RM554535, 
+    Mariana Dourado - RM550494, 
+    Thomas Reichmann - RM554812
+
 ## Requisitos
 - Python 3.10+
 ## Funcionalidades
@@ -17,14 +25,6 @@ O projeto aplica conceitos de estruturas de dados (fila, pilha, busca e ordenaç
     - Merge Sort
     - Quick Sort
 - Entradas robustas: não aceita valores numéricos, vazios ou opções inválidas; normaliza acentos e letras maiúsculas/minúsculas.
-
-## Integrantes
-    Abner de Paiva Barbosa - RM558468, 
-    Eduardo Dallabella - RM556803, 
-    Fernando Luiz - RM555201, 
-    Heloísa Real - RM554535, 
-    Mariana Dourado - RM550494, 
-    Thomas Reichmann - RM554812
 
 ## Estrutura do Projeto
 ```
@@ -113,6 +113,7 @@ O projeto demonstra a aplicação prática de estruturas de dados e algoritmos e
 - Buscas oferecem formas diferentes de localizar insumos, com feedback de eficiência.
 - Ordenações ajudam a priorizar decisões de compra e reposição.
 - O menu interativo torna o sistema acessível e próximo de um software real de apoio à gestão.
+
 
 
 
